@@ -1,28 +1,18 @@
 == README
+# Pre-Work PrimeTimeBlog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+PrimeTimeBlog Ruby on Rails blog application.
 
-Things you may want to cover:
+Submitted by: Loi Tran
 
-* Ruby version
+3 hours spent in total
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+URL: https://glacial-island-18918.herokuapp.com/
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* [x] User can create a new post, formatted using the Markdown language.
+* [x] User can edit an existing post.
+* [x] There is one post that introduces the App Creator with name, picture.
+* [x] User can delete stories, with an alert that asks the user to confirm.
+* [ ] User see a search form on the Posts page.
+* [ ] User can submit a search term to find all posts by with titles containing the search term.
