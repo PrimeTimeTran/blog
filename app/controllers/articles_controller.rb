@@ -13,6 +13,7 @@ class ArticlesController < ApplicationController
     else
       @articles = Article.all.order('created_at DESC')
     end
+
   end
 
   # GET /articles/1
@@ -79,4 +80,5 @@ class ArticlesController < ApplicationController
     def article_params
       params.require(:article).permit(:title, :body)
     end
+
 end

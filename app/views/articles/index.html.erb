@@ -3,16 +3,15 @@
 <div class="container" id="main">
   <h1 style="color:blue">Loi's Blog</h1>
   <h3>Not exactly my first, but my first for<br><strong style="color:red">CoderSchool</strong></h3>
-  <%= form_tag(articles_path, :method => "get", id: "search-form") do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Search Articles" %>
-    <%= submit_tag "Search" %>
+
+  <%= form_tag articles_path, :method => 'get' do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+    </p>
   <% end %>
 
-      <% if @article.present? %>
-        <%= render @article %>
-      <% else %>
-        <p>There are no posts containing the term(s) <%= params[:search] %>.</p>
-      <% end %>
+
   <br>
   <%= render @articles %>
   <%= link_to 'New Article', new_article_path %>
