@@ -1,13 +1,12 @@
 == README
-# Pre-Work PrimeTimeBlog
-
+# Pre-Work Submitted by Loi Tran
 PrimeTimeBlog Ruby on Rails blog application.
 
 Submitted by: Loi Tran
 
 6 hours spent in total
 
-### URL:
+### URL of Web Application:
 https://glacial-island-18918.herokuapp.com/
 
 
@@ -32,14 +31,19 @@ I decided to post an actual video instead of a gif because I feel like it's a be
 If you feel like you want me to use the licecap software then don't hesitate to tell me and I'll do it the way you wanted me to.
 [Video Walkthrough](http://www.youtube.com/watch?v=krldD3OL7p8)
 
+## Here's a walkthrough of implemented user stories:
+![Video Walkthrough](/vendor/walkthrough.gif)
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 
 ###### Notes
 
 I had difficulty with the routing for a sec but thanks to Cang giving me a pointer on what I did wrong I figured it out.
 
-My primary trouble was my job and not being able to spend a ton of time on it. Otherwise I thought it went pretty smoothly except for a few configuration errors I had to spend a some time researching on how to resolve.## License
+My primary trouble was my job and not being able to spend a ton of time on it. Otherwise I thought it went pretty smoothly except for a few configuration errors I had to spend a some time researching on how to resolve.
 
-    Copyright [yyyy] [name of copyright owner]
+## License
+    Copyright 2016 PrimeTimeTran
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
