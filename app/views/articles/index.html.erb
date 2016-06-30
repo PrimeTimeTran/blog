@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<div class="container">
+<div class="container" id="main">
   <h1 style="color:blue">Loi's Blog</h1>
   <h3>Not exactly my first, but my first for<br><strong style="color:red">CoderSchool</strong></h3>
   <%= form_tag(articles_path, :method => "get", id: "search-form") do %>
@@ -16,5 +16,4 @@
   <br>
   <%= render @articles %>
   <%= link_to 'New Article', new_article_path %>
-
 </div>
