@@ -5,7 +5,7 @@ PrimeTimeBlog Ruby on Rails blog application.
 
 Submitted by: Loi Tran
 
-3 hours spent in total
+6 hours spent in total
 
 ### URL:
 https://glacial-island-18918.herokuapp.com/
@@ -18,6 +18,12 @@ https://glacial-island-18918.herokuapp.com/
 * [x] User see a search form on the Posts page.
 * [x] User can submit a search term to find all posts by with titles containing the search term.
 
+The following **optional** features are implemented:
+* [x] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/.
+* [ ] User can see how many views a post has.
+* [ ] User can leave a comment on a post.
+* [ ] User can add "tags" to a post, and filter posts by tag.
+
 ###### Included Walkthrough
 I decided to post an actual video instead of a gif because I feel like it's a better way to explain the app and it's uses.
 If you feel like you want me to use the licecap software then don't hesitate to tell me and I'll do it the way you wanted me to.
@@ -28,8 +34,4 @@ If you feel like you want me to use the licecap software then don't hesitate to 
 
 I had difficulty with the routing for a sec but thanks to Cang giving me a pointer on what I did wrong I figured it out.
 
-My chief complaint is the the requirements are a little bit vague.
-
-I also didn't include all of the functionality that was listed in this template because the instructions aren't clear on whether or not they're "required".
-Although it says required on the template the introductions found <http://courses.coderschool.vn/ruby/prework> don't mention having to have a search feature
-or search terms for the posts.
+My primary trouble was my job and not being able to spend a ton of time on it. Otherwise I thought it went pretty smoothly except for a few configuration errors I had to spend a some time researching on how to resolve.
