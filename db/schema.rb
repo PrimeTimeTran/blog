@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20160629093544) do
     t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text     "content"
   end
 
 end
