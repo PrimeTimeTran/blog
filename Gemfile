@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Bootstrap is getting Added!
+gem 'bootstrap-sass'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
 # Markdown Added
