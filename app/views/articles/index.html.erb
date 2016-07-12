@@ -18,24 +18,23 @@
 <!-- Portfolio Grid Section -->
     <section id="portfolio">
       <container>
-      <p id="notice">
-      <%= notice %></p>
-      <div class="container" id="main">
-        <h1><%= link_to "PrimeTimeTran's Blog", root_path %></h1>
-        <h3>Not exactly my first, but my first for<br><strong style="color:red">CoderSchool</strong></h3>
-        <div class="container">
-        <%= form_tag articles_path, :method => 'get' do %>
-          <p>
-            <%= text_field_tag :search, params[:search] %>
-            <%= submit_tag "Search", :name => nil %>
-          </p>
-        </div>
-        <% end %>
-        <br>
-        <%= render @articles %>
-        <%= link_to 'New Article', new_article_path %>
-      </div>
-    </container>
+        <p id="notice">
+          <%= notice %></p>
+            <div class="container" id="main">
+              <h1><%= link_to "PrimeTimeTran's Blog", root_path %></h1>
+                <h3>Not exactly my first, but my first for<br><strong style="color:red">CoderSchool</strong></h3>
+                  <div class="container">
+                    <%= form_tag articles_path, :method => 'get' do %>
+                      <p>
+                        <%= text_field_tag :search, params[:search] %>
+                        <%= submit_tag "Search", :name => nil %>
+                      </p>
+                  </div>
+                        <% end %><br>
+                        <%= render @articles %>
+                        <%= link_to 'New Article', new_article_path %>
+            </div>
+      </container>
     </section>
 
 <!-- About Section -->
