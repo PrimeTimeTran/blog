@@ -34,6 +34,10 @@ gem 'rails_12factor', group: 'production'
 # For search feature
 gem 'ransack'
 
+# User Login https://youtu.be/3Zy9wMR1TBc
+gem 'simple_form'
+gem 'rails-footnotes', '>= 3.7.9', :group => :development
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
