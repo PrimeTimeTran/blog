@@ -12,14 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= f.label "Title:" %><br>
+    <h3><%= f.label "Title:" %></h3>
     <%= f.text_field :title, class: "form-control" %>
   </div>
   <div class="field">
-    <%= f.label "Body:" %><br>
+    <h3><%= f.label "Body:" %></h3>
     <%= f.text_area :body, class: "form-control" %>
   </div>
   <div class="actions"><br>
     <%= f.button :Update, :class => 'btn btn-success' %>
+
+    <%= link_to 'Show', @article, class: 'btn btn-warning' %> |
+    <%= link_to 'Back', articles_path, class: 'btn btn-warning' %>
   </div>
 <% end %>
