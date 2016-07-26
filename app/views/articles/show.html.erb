@@ -2,15 +2,15 @@
   <container><br><br><br>
     <div class="container" id="main">
       <p id="notice"><%= notice %>
-        <h1 style="color:blue">Title:</h1>
+        <h2>Title:</h2>
           <%= @article.title %>
       </p>
       <body>
-          <h3>Body:</h3>
+          <h2>Body:</h2>
             <%= @article.body %>
       </body><br>
 
-      <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-warning' %> |
+      <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-success' %> |
       <%= link_to 'Back', articles_path, class: 'btn btn-warning' %>
     </div>
   </container>
