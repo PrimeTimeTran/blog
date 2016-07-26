@@ -8,11 +8,11 @@
                   <%= form_tag articles_path, :method => 'get' do %>
                     <p>
                       <%= text_field_tag :search, params[:search], class: "form-control" %><br>
-                      <%= submit_tag "Search", :name => nil, class: "btn btn-primary" %>
+                      <%= submit_tag "Search", :name => nil, class: "btn btn-success" %>
                     </p>
                       <% end %><br>
                       <%= render @articles %><br><br>
-                      <%= link_to 'New Article', new_article_path, class: "btn btn-primary" %>
+                      <%= link_to 'New Article', new_article_path, class: "btn btn-success" %>
           </div>
     </container>
   </section>
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div>
                   I'm currently playing on offense, defense, and special teams. I've been called a "mover and a shaker", "my right hand", and "the trigger man";
                   but I'm not hubris enough to suggest that they're absolutely correct... but I'm not scared to say that I'm trying!<br><br>
 
@@ -54,11 +54,11 @@
                   Formulating strategy, projections, and deadlines for future projects along with other project team members of their company as well as ours is also tremendously
                   critical as Account Strategist.<br><br>
 
-                  Here's an example video I made<br>
-                  <a href="https://www.youtube.com/embed/-qJiLYLZBc4">here</a>. =)
+                  Here's an example video I made
+                  <a href="https://www.youtube.com/embed/-qJiLYLZBc4">here</a>.<br><br>
 
                 </div>
-                <div class="col-lg-4">
+                <div>
                   Traditionally educated at <a href="https://www.tcc.fl.edu/Pages/default.aspx">Tallahassee Community College</a> and <a href="https://www.fsu.edu/">
                     Florida State University.</a> That being said, I believe many lessons lie <u style="color: red">outside the classroom</u>... perhaps maybe; on the job training? Perhaps in Life?<br>
                     <p class="about_us_p">Sure, I'm scared of failing. But I'm even more scared of <u style="color: red">not even trying</u>...<br>
