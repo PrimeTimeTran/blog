@@ -1,8 +1,11 @@
 // Custom bootstrap variables must be set or imported before bootstrap itself.
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display|Muli:300,400);
 @import "bootstrap";
 @import "bootstrap-sprockets";
 
 /* General styles */
+
+
 
 body {
  background-color: #f0f0f5;
@@ -82,4 +85,8 @@ hr {
  .btn-default {
    color: #0a8fd5;
  }
+}
+
+.footer {
+  background-color: #A6E9FF;
 }

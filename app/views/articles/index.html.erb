@@ -4,7 +4,7 @@
       <p id="notice">
         <%= notice %></p>
           <div class="container" id="main">
-              <hr><h3>A little something I've made for<br><strong><a href="http://www.CoderSchool.vn">CoderSchool</a></strong></h3>
+              <hr><h3>A Simple Blog App for<br><strong><a href="http://www.CoderSchool.vn">CoderSchool</a></strong></h3>
                   <%= form_tag articles_path, :method => 'get' do %>
                     <p>
                       <%= text_field_tag :search, params[:search], class: "form-control" %><br>
@@ -111,9 +111,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate="">
+
+                  <!-- This is the form for sending out an email to ourselves-->
+
+                    <form action="MAILTO:datloiboi@gmail.com" method="post" enctype="text/plain">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Full Name</label>
@@ -143,13 +144,13 @@
                             </div>
                         </div>
                         <br>
-                        <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send Email</button>
+                                <button type="submit" class="btn btn-success btn-lg" value="Send">Send Email</button>
                             </div>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
