@@ -5,7 +5,7 @@
         <%= notice %></p>
           <div class="container" id="main">
             <h1><%= link_to "My Blog", root_path %></h1>
-              <h3>Not exactly my first, but my first for<br><strong style="color:red">CoderSchool</strong></h3>
+              <h3>Not exactly my first, but my first for<br><strong style="color:red"><a href="http://www.CoderSchool.vn">CoderSchool</a></strong></h3>
                   <%= form_tag articles_path, :method => 'get' do %>
                     <p>
                       <%= text_field_tag :search, params[:search] %><br>
