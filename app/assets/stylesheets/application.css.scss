@@ -90,13 +90,16 @@ hr {
  }
 }
 
-.wrapper {
-  padding:20px;
-  height:auto;
-}
-
 footer {
   background-color: #C0C0C0;
   display:table-row;
   height:1px;
+}
+
+
+.faq {
+  background-color: #EBEBEB;
+  padding:20px;
+  height:auto;
+  border-style: solid;
 }

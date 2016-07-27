@@ -25,13 +25,19 @@
         <div class="navbar-header">
           <%= link_to "CoderSchoolBlog", root_path, class: "navbar-brand" %>
         </div>
+        <div>
+          <ul>
+            <li>
+            <%= link_to "About Me", welcome_index_path, class: "navbar-right navbar-text navbar-link" %>
+            <%= link_to "FAQ", welcome_faq_path, class: "navbar-right navbar-text navbar-link" %>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-
     <div class="container">
       <%= yield %>
     </div>
-
 </body>
 
 <!-- Footer Field! -->
