@@ -16,22 +16,22 @@ class ArticlesController < ApplicationController
 
   end
 
-  # GET /articles/1
-  # GET /articles/1.json
+# GET /articles/1
+# GET /articles/1.json
   def show
   end
 
-  # GET /articles/new
+# GET /articles/new
   def new
     @article = Article.new
   end
 
-  # GET /articles/1/edit
+# GET /articles/1/edit
   def edit
   end
 
-  # POST /articles
-  # POST /articles.json
+# POST /articles
+# POST /articles.json
   def create
     @article = Article.new(article_params)
 
