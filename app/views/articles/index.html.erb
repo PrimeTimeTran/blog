@@ -4,15 +4,15 @@
       <p id="notice">
         <%= notice %></p>
           <div class="container" id="main">
-              <h3>A Blog App for<br><strong><a href="http://www.CoderSchool.vn">CoderSchool</a></strong></h3>
-                  <%= form_tag articles_path, :method => 'get' do %>
-                    <p>
-                      <%= text_field_tag :search, params[:search], class: "form-control" %><br>
-                      <%= submit_tag "Search", :name => nil, class: "btn btn-success" %>
-                    </p>
-                      <% end %>
-                      <%= render @articles %><br><br>
-                      <%= link_to 'New Article', new_article_path, class: "btn btn-primary" %>
+            <h3>A Blog App for<br><strong><a href="http://www.CoderSchool.vn">CoderSchool</a></strong></h3>
+              <%= form_tag articles_path, :method => 'get' do %>
+                <p>
+                  <%= text_field_tag :search, params[:search], class: "form-control" %><br>
+                  <%= submit_tag "Search", :name => nil, class: "btn btn-success" %>
+                </p>
+                  <% end %>
+                  <%= render @articles %><br><br>
+                  <%= link_to 'New Article', new_article_path, class: "btn btn-primary" %>
           </div>
     </container>
   </section>
