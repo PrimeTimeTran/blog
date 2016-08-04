@@ -1,5 +1,5 @@
 <hr>
-  <h1><%= article.title %></h1>
+  <h1> <%= article.title %> </h1>
     <p class="card-text"><%= @markdown.render(article.body).html_safe %></p>
       <br>
       <%= link_to 'Edit', edit_article_path(article), class: 'btn btn-warning' %>
