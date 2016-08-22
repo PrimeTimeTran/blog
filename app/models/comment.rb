@@ -1,8 +1,5 @@
-# class Comment < ActiveRecord::Base
-#
-#   belongs_to :message
-#   belongs_to :user
-# end
+class Comment < ActiveRecord::Base
 
-
-puts "Hello world!"
+  belongs_to :message
+  belongs_to :user
+end
