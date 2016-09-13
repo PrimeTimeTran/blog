@@ -32,6 +32,8 @@
     ![Video Walkthrough](BlogAPP.gif)
     ![Video Walkthrough](/BlogApp.gif)
 
+    Hmmm this embed isn't working but the imgur URL is [here](http://i.imgur.com/o2mJ4Vs.gif)
+
 
     GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
