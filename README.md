@@ -29,7 +29,9 @@
 
     Here's a walkthrough of implemented user stories:
 
-    ![Video Walkthrough](/BlogAPP.gif)
+    ![Video Walkthrough](BlogAPP.gif)
+    ![Video Walkthrough](/BlogApp.gif)
+
 
     GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
