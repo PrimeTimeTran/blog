@@ -25,7 +25,7 @@
     * [ ] User can leave a comment on a post.
     * [ ] User can add "tags" to a post, and filter posts by tag.
 
-    ## Video Walkthrough
+## Video Walkthrough
 
     Here's a walkthrough of implemented user stories:
 
