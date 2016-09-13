@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html>
 <!-- Header -->
-<head>
-  <title>Prime Time Tran</title>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- Bootstrap Core CSS -->
-      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-</head>
+  <head>
+    <title>Prime Time Tran</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="PrimeTimeTran" content="width=device-width, initial-scale=1">
+        <meta name="A Simple blogging app to submit for CoderSchool" content="">
+        <meta name="PrimeTimeTran" content="">
+        <!-- Bootstrap Core CSS -->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <%= javascript_include_tag "application" %>
+  </head>
 
-<!-- Body -->
-  <body>
-    <%= render "layouts/navigation" %>
-      <div class="container">
-    <%= yield %>
+  <!-- Body -->
+    <body>
+      <%= render "layouts/navigation" %>
+        <div class="container">
+      <%= yield %>
 
-<!-- Contact-->
-  <%= render "layouts/contact" %>
-    </div>
+  <!-- Contact-->
+    <%= render "layouts/contact" %>
+      </div>
 
-<!-- Footer Field! -->
-  <%= render "articles/footer" %>
-  </body>
-</html>
+  <!-- Footer Field! -->
+    <%= render "articles/footer" %>
+    </body>
+  </html>
