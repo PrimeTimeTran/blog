@@ -1,10 +1,5 @@
 # Pre-work - CoderSchool Blog App
 
-    > HINT: Please
-    > - include this README.md in your project and fill out the information.
-    > - remove the `README.rdoc` file that Rails generates.
-    > - remove all the HINT blocks in this file.
-
     **CoderSchool Blog App** is a Ruby on Rails blog application.
 
     Submitted by: **Loi Tran**
@@ -13,11 +8,9 @@
 
     URL: **https://glacial-island-18918.herokuapp.com/**
 
-    ## User Stories
+## User Stories
 
-    The following **required** functionality is complete:
-
-    > HINT: mark the items you completed with [x]
+    The following **required** functionality is complete:]
 
     * [x] User can create a new post, formatted using the Markdown language.
     * [x] User can edit an existing post.
@@ -36,15 +29,11 @@
 
     Here's a walkthrough of implemented user stories:
 
-    > HINT: You can put a `walkthrough.gif` file in your project folder, add to git, and use the following syntax to embed it:  
-    > `![Video Walkthrough](walkthrough.gif)`
-    >
-
     ![Video Walkthrough](/BlogAPP.gif)
 
     GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-    ## Notes
+## Notes
 
     I had trouble getting the delete function to work for a while, but some googling and looking at StackOverFlow got me through it.
     My more pressing challenge was time. I just need to get some more free time in my life.
