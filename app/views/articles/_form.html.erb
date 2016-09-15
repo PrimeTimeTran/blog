@@ -2,24 +2,24 @@
   <% if @article.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
-      <ul>
-      <% @article.errors.full_messages.each do |message| %>
+        <ul>
+          <% @article.errors.full_messages.each do |message| %>
         <li><%= message %></li>
-      <% end %>
-      </ul>
+          <% end %>
+        </ul>
     </div>
   <% end %>
-  <div class="field">
-    <h3><%= f.label "Title:" %></h3>
-    <%= f.text_field :title, class: "form-control" %>
-  </div>
-  <div class="field">
-    <h3><%= f.label "Body:" %></h3>
-    <%= f.text_area :body, class: "form-control", :style => "height: 400px" %>
-  </div>
-  <div class="actions"><br>
-    <%= f.button :Update, :class => 'btn btn-success' %> |
-    <%= link_to 'Show', @article, class: 'btn btn-info' %> |
-    <%= link_to 'Back', articles_path, class: 'btn btn-warning' %>
+    <div class="field">
+      <h3><%= f.label "Title:" %></h3>
+        <%= f.text_field :title, class: "form-control" %>
+    </div>
+    <div class="field">
+      <h3><%= f.label "Body:" %></h3>
+      <%= f.text_area :body, class: "form-control", :style => "height: 400px" %>
+    </div>
+      <div class="actions"><br>
+        <%= f.button :Update, :class => 'btn btn-success' %> |
+          <%= link_to 'Show', @article, class: 'btn btn-info' %> |
+        <%= link_to 'Back', articles_path, class: 'btn btn-warning' %>
   </div>
 <% end %>
