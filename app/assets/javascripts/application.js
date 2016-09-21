@@ -17,7 +17,7 @@
 //= require_tree .
 $(document).ready(function() {
   $("#target").on("click", function() {
-      $("#main").slideToggle(1000)
+      $("#main").toggle(2000)
       if($(this).text() == 'Hide Articles' ) {
         $(this).text('Show Articles');
       } else {
