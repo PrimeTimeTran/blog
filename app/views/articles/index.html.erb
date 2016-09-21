@@ -5,28 +5,29 @@
     <p id="notice">
       <%= notice %>
     </p>
-          <div class="container" style="background-color: red" id="main">
+          <div class="container" style="background-color: #593E1A">
             <br>
             <div class="jumbotron">
               <h1>A Blog App for</h1><a href="http://www.CoderSchool.vn">CoderSchool</a>
             </div>
-            <%= form_tag articles_path, :method => 'get' do %>
-            <%= text_field_tag :search, params[:search], class: "form-control" %><br>
-            <div>
-              <%= submit_tag "Search", :name => nil, class: "btn btn-success" %>
-              <% end %>
-            </div>
-              <br>
-            <div class="col-xl-4">
-              <button id="target" class="btn btn-primary" >Hide Articles</button>
-            </div>
-            <br>
+              <button id="target" class="btn btn-danger">Hide Articles</button><br><br>
+            <div id="main">
+              <%= form_tag articles_path, :method => 'get' do %>
+              <%= text_field_tag :search, params[:search], class: "form-control" %><br>
+              <div>
+                <%= submit_tag "Search", :name => nil, class: "btn btn-success" %>
+                <% end %>
+              </div>
+                <br>
 
-            <section>
-              <%= render @articles %><br><br>
-            </section>
-              <%= link_to 'New Article', new_article_path, class: "btn btn-success" %><br><br>
-              <button id="change" class="btn btn-primary">Make it Grey!</button><br><br>
+              <br>
+
+              <section>
+                <%= render @articles %><br><br>
+              </section>
+                <%= link_to 'New Article', new_article_path, class: "btn btn-success" %><br><br>
+                <button id="change" class="btn btn-primary">Make it Grey!</button><br><br>
+              </div>
         </div>
   </container>
 </section>
