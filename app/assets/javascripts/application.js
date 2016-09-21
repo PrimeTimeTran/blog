@@ -17,11 +17,15 @@
 //= require_tree .
 $(document).ready(function() {
   $("#target").on("click", function() {
-      $("#main").toggle(2000)
+      $("#main").toggle(1000)
       if($(this).text() == 'Hide Articles' ) {
         $(this).text('Show Articles');
       } else {
         $(this).text('Hide Articles');
       }
     });
+
+    $("#change").on("click", function() {
+      $("#main").css("background-color", "#8F8F8F");
+      });
   });
