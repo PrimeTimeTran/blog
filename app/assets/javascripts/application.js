@@ -27,5 +27,7 @@ $(document).ready(function() {
 
     $("#change").on("click", function() {
       $("#main").css("background-color", "#8F8F8F");
-      });
+      $(this).hide();
+    });
+
   });
