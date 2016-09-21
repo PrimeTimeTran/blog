@@ -15,6 +15,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-//= require jquery
-//= require jquery_ujs
+$(document).ready(function() {
+  $("#target").on("click", function() {
+      $("#main").toggle(1000)
+    });
+  });

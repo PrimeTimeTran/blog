@@ -1,6 +1,9 @@
 <!-- Main Content of the index Page -->
 <section id="portfolio">
     <container>
+      <button id="target">Hide Post</button>
+
+
       <p id="notice">
         <%= notice %></p>
           <div class="container" id="main">
@@ -11,7 +14,9 @@
                   <%= submit_tag "Search", :name => nil, class: "btn btn-success" %>
                 </p>
                   <% end %>
-                  <%= render @articles %><br><br>
+                  <section id="articles">
+                    <%= render @articles %><br><br>
+                  </section>
                   <%= link_to 'New Article', new_article_path, class: "btn btn-primary" %><br>
           </div>
     </container>
