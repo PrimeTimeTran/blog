@@ -5,13 +5,13 @@
     <p id="notice">
       <%= notice %>
     </p>
-          <div class="container" style="background-color: #593E1A" id="main">
+          <div class="container" style="background-color: #593E1A" id="bg">
             <br>
             <div class="jumbotron">
               <h1>A Blog App for</h1><a href="http://www.CoderSchool.vn">CoderSchool</a>
             </div>
               <button id="target" class="btn btn-danger">Hide Articles</button><br><br>
-            <div>
+            <div id="main">
               <%= form_tag articles_path, :method => 'get' do %>
               <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search Database for Articles" %><br>
               <div>
