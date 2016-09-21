@@ -1,12 +1,10 @@
 <!-- Main Content of the index Page -->
 <section id="portfolio">
     <container>
-      <button id="target">Hide Post</button>
-
-
       <p id="notice">
         <%= notice %></p>
-          <div class="container" id="main">
+          <div class="container">
+            <button id="target" class="btn btn-primary" >Hide Articles</button>
             <h3>A Blog App for<br><strong><a href="http://www.CoderSchool.vn">CoderSchool</a></strong></h3>
               <%= form_tag articles_path, :method => 'get' do %>
                 <p>
@@ -14,7 +12,7 @@
                   <%= submit_tag "Search", :name => nil, class: "btn btn-success" %>
                 </p>
                   <% end %>
-                  <section id="articles">
+                  <section id="main">
                     <%= render @articles %><br><br>
                   </section>
                   <%= link_to 'New Article', new_article_path, class: "btn btn-primary" %><br>
