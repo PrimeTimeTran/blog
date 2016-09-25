@@ -10,13 +10,13 @@
         <button id="target" class="btn btn-danger">Hide Articles</button> <button id="change" class="btn btn-primary">Make it Grey!</button><br><br>
       <div id="main">
         <%= form_tag articles_path, :method => 'get' do %>
-        <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search Title" %><br>
+        <%= text_field_tag :title_search, params[:title_search], class: "form-control", placeholder: "Search Title" %><br>
         <div>
           <%= submit_tag "Search", :name => nil, class: "btn btn-success" %><br>
           <% end %>
           <br>
           <%= form_tag articles_path, :method => 'get' do %>
-          <%= text_field_tag :body, params[:body], class: "form-control", placeholder: "Search Body" %><br>
+          <%= text_field_tag :body_search, params[:body_search], class: "form-control", placeholder: "Search Body" %><br>
           <div>
             <%= submit_tag "Search", :name => nil, class: "btn btn-success" %>
           <% end %>

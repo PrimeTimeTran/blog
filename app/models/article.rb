@@ -1,9 +1,9 @@
 class Article < ActiveRecord::Base
   has_many :comments
   def self.search(query_hash)
-     result = scoped
-     result = result.where("title like ?", "%#{title}%") if (title = query_hash[:title]).present?
-     result = result.where("body like ?", "%#{body}%") if (body = query_hash[:body]).present?
-     result
+    result = all
+    result = result.where("title like ?", "%#{query_hash[:title]}%") if query_hash[:title]
+    result = result.where("body like ?", "%#{query_hash[:body]}%") if query_hash[:body]
+    result
   end
 end
