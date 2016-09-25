@@ -15,7 +15,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-$(document).ready(("page:change", function() {
+$(document).on("page:change", function() {
   $("#target").on("click", function() {
       $("#main").toggle(1000)
       if($(this).text() == 'Hide Articles' ) {
