@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
 $(document).on("page:load ready", function() {
   $("#target").on("click", function() {
       $("#main").toggle(1000)
