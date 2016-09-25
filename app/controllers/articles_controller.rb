@@ -7,13 +7,12 @@ class ArticlesController < ApplicationController
     @articles = Article.all
     @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
 
-    # Adding search feature.
-    if params[:search]
-      @articles = Article.search(params[:search]).order("created_at DESC")
+    # Adding search feature for Title.
+    if params[:title_search] || params[:body_search]
+      @articles = Article.search(title: params[:title_search], body: params[:body_search]).order("created_at DESC")
     else
       @articles = Article.all.order('created_at DESC')
     end
-
   end
 
 # GET /articles/1

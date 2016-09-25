@@ -16,7 +16,7 @@
           <% end %>
           <br>
           <%= form_tag articles_path, :method => 'get' do %>
-          <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search Body" %><br>
+          <%= text_field_tag :body, params[:body], class: "form-control", placeholder: "Search Body" %><br>
           <div>
             <%= submit_tag "Search", :name => nil, class: "btn btn-success" %>
           <% end %>
