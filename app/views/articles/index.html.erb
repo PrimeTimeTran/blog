@@ -12,13 +12,13 @@
         <%= form_tag articles_path, :method => 'get' do %>
         <%= text_field_tag :title_search, params[:title_search], class: "form-control", placeholder: "Search Title" %><br>
         <div>
-          <%= submit_tag "Search", :name => nil, class: "btn btn-success" %><br>
+          <%= submit_tag "Search Title", :name => nil, class: "btn btn-success" %><br>
           <% end %>
           <br>
           <%= form_tag articles_path, :method => 'get' do %>
           <%= text_field_tag :body_search, params[:body_search], class: "form-control", placeholder: "Search Body" %><br>
           <div>
-            <%= submit_tag "Search", :name => nil, class: "btn btn-success" %>
+            <%= submit_tag "Search Body", :name => nil, class: "btn btn-success" %>
           <% end %>
         </div>
           <br>
@@ -28,3 +28,6 @@
           <%= link_to 'New Article', new_article_path, class: "btn btn-success" %><br><br>
         </div>
   </div>
+  <button>Toggle</button>
+  <p id="p">Hello</p>
+  <p style="display: none" id="p">Good Bye</p>

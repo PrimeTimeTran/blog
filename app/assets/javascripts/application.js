@@ -26,9 +26,8 @@ $(document).on("page:load ready", function() {
       }
     });
 
-    $("#change").on("click", function() {
-      $("#bg").css("background-color", "#8F8F8F");
-      $(this).hide();
-    });
-
+      $("#change").on("click", function() {
+        $("#bg").css("background-color", "#8F8F8F");
+        $(this).hide();
+      });
   });

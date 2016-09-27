@@ -20,6 +20,9 @@
     * [x] User can submit a search term to find all posts by with titles containing the search term.
 
     The following **optional** features are implemented:
+    * [x] Added jQuery.
+    * [x] Search via body
+    * [x] Validations for length of the Title and Body.
     * [x] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/.
     * [ ] User can see how many views a post has.
     * [ ] User can leave a comment on a post.
@@ -31,9 +34,6 @@
 
     ![Video Walkthrough](BlogAPP.gif)
     ![Video Walkthrough](/BlogApp.gif)
-
-    Hmmm this embed isn't working but the imgur URL is ![here](http://i.imgur.com/o2mJ4Vs.gif)
-
 
     GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
