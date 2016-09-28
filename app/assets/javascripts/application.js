@@ -19,15 +19,17 @@
 $(document).on("page:load ready", function() {
   $("#target").on("click", function() {
       $("#main").toggle(1000)
-      if($(this).text() == 'Hide Articles' ) {
-        $(this).text('Show Articles');
-      } else {
-        $(this).text('Hide Articles');
-      }
-    });
+        if($(this).text() == 'Hide Articles' ) {
+          $(this).text('Show Articles');
+        } else {
+          $(this).text('Hide Articles');
+        }
+      });
 
       $("#change").on("click", function() {
         $("#bg").css("background-color", "#8F8F8F");
         $(this).hide();
       });
+
+      $("p").css("border", "4px solid red");
   });
