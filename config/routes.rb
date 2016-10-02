@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   resources :comments
   get 'welcome/index'
   get 'welcome/faq'
+  get 'welcome/khang'
   resources :articles
 end

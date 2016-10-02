@@ -31,5 +31,5 @@ $(document).on("page:load ready", function() {
         $(this).hide();
       });
 
-      $("p").css("border", "4px solid red");
+      //$("p").css("border", "4px solid red");
   });
