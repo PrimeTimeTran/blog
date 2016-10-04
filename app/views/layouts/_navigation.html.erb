@@ -1,15 +1,18 @@
-<div class="navbar navbar-default">
-  <div class="navbar-header">
-    <%= link_to "CoderSchoolBlog", root_path, class: "navbar-brand" %>
-  </div>
+<div class="container">
+  <div class="navbar navbar-default well">
+    <div class="navbar-header">
+      <%= link_to "CoderSchoolBlog", root_path, class: "navbar-brand" %>
+    </div>
 
-  <div class="navbar-link">
-    <ul>
-      <li>
-        <%= link_to "About", welcome_index_path, class: "navbar-right navbar-text navbar-link" %>
-        <%= link_to "FAQ", welcome_faq_path, class: "navbar-right navbar-text navbar-link" %>
-        <%= link_to "Khang's Code!", welcome_khang_path, class: "navbar-right navbar-text navbar-link" %>
-      </li>
-    </ul>
+    <div class="navbar-link">
+      <ul>
+        <li>
+          <%= link_to "About", welcome_index_path, class: "navbar-right navbar-text navbar-link" %>
+          <%= link_to "FAQ", welcome_faq_path, class: "navbar-right navbar-text navbar-link" %>
+          <%= link_to "Khang's Code!", welcome_khang_path, class: "navbar-right navbar-text navbar-link" %>
+          <%= link_to "CSS", welcome_cssplayground_path, class: "navbar-right navbar-text navbar-link" %>
+        </li>
+      </ul>
+    </div>
+    </div>
   </div>
-</div>

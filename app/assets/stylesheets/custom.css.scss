@@ -1,0 +1,60 @@
+#container {
+  background-color: red;
+  width: 960px;
+  height: 1000px;
+  margin: auto;
+}
+
+#sec {
+  background: #73AD21;
+  width: 700px;
+  float: left;
+}
+
+#sec1 {
+  background: black;
+  width: 260px;
+  float: left;
+}
+
+#myCarousel {
+  max-width: 960px;
+}
+
+.carousel-inner > .item > img {
+  min-width: 100%;
+  width: 100%;
+}
+
+img {
+  margin: auto;
+}
+@media screen and (max-width: 959px){
+  #myCarousel {
+    width:100%;
+  }
+  #container {
+    width: 100%;
+  }
+  #sec {
+    width:70%;
+  }
+  #aside {
+    width:30px;
+  }
+}
+@media screen and (max-width: 640px){
+
+  #sec {
+    width:100%;
+  }
+  #aside {
+    width:100px;
+  }
+
+}
+@media screen and (max-width: 320px){
+  #container{
+    width:320px;
+  }
+}

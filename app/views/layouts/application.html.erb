@@ -7,7 +7,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="PrimeTimeTran" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This is how we get the responsive design in -->
       <meta name="A Simple blogging app to submit for CoderSchool" content="An example of a simple Blog app for Ruby on Rails training">
       <meta name="PrimeTimeTran" content="">
         <!-- Bootstrap Core CSS -->
@@ -25,9 +25,8 @@
 <!-- Body -->
   <body>
     <div class="container">
-    <%= render "layouts/navigation" %>
+      <%= render "layouts/navigation" %>
       <%= yield %>
-
   <!-- Footer Field! -->
       <%= render "articles/footer" %>
     </div>
