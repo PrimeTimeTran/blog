@@ -33,10 +33,10 @@ $(document).on("page:load ready", function() {
   });
 
   $(document).on("page:load ready",function(){
-      // Activate Carousel
+      // Activate Carousel for use
       $("#myCarousel").carousel();
 
-      // Enable Carousel Indicators
+      // Enable Carousel Indicators in the middle
       $(".item1").click(function(){
           $("#myCarousel").carousel(0);
       });
@@ -50,7 +50,7 @@ $(document).on("page:load ready", function() {
           $("#myCarousel").carousel(3);
       });
 
-      // Enable Carousel Controls
+      // Enable Carousel Controls for left and right
       $(".left").click(function(){
           $("#myCarousel").carousel("prev");
       });
