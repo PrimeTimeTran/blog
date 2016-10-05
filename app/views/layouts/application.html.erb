@@ -24,8 +24,9 @@
 
 <!-- Body -->
   <body>
+    <%= render "layouts/navigation" %>
     <div class="container">
-      <%= render "layouts/navigation" %>
+
       <%= yield %>
   <!-- Footer Field! -->
       <%= render "articles/footer" %>

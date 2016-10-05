@@ -60,10 +60,6 @@ hr {
 }
 
 .navbar-default {
- width: 100%;
- padding-top: 5px;
- padding-bottom: 5px;
- padding-right: 30px;
 
  .navbar-nav > li > a {
    color: #222;
@@ -211,7 +207,6 @@ $table-header-border: 1px solid #FFF;
 // General styles
 
 body {
-  padding: 0 2em;
   font-family: Arial, sans-serif;
   color: #024457;
   background: #f2f2f2;
