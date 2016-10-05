@@ -17,9 +17,9 @@
             <% else %>
               <li><%= link_to "Log In", new_user_session_path %></li>
             <% end %>
+            <% if user_signed_in? %>
+                        <%= link_to 'New Article', new_article_path, class: "btn btn-default navbar-btn" %>
+            <% end %>
       </ul>
     </div>
-    <% if user_signed_in? %>
-      <p><%= link_to "New Article", new_article_path, class: "navbar-text", style: "btn-success"%></p>
-    <% end %>
 </nav>

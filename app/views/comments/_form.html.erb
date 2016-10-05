@@ -1,10 +1,7 @@
-<%= simple_form_for(@comment) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-  </div>
-
-  <div class="form-actions">
+<div>
+  <%= simple_form_for([@article, @article.comments.build]) do |f| %>
+    <%= f.input :content, label: "Comment" %>
     <%= f.button :submit %>
-  </div>
+
 <% end %>
+</div><br>
