@@ -5,10 +5,21 @@
     </div>
 
       <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "About", welcome_index_path, class: "" %></li>
-          <li><%= link_to "FAQ", welcome_faq_path, class: "" %></li>
-          <li><%= link_to "Khang's Code!", welcome_khang_path, class: "" %></li>
-          <li><%= link_to "CSS", welcome_cssplayground_path, class: "" %></li>
+          <li><%= link_to "About", welcome_index_path %></li>
+          <li><%= link_to "FAQ", welcome_faq_path %></li>
+          <li><%= link_to "Khang's Code!", welcome_khang_path %></li>
+          <li><%= link_to "CSS", welcome_cssplayground_path %></li>
+
+          <li><%= link_to "Sign Up", new_user_registration_path %></li>
+            <% if user_signed_in? %>
+              <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+              <!-- <li><%= link_to :logout, destroy_user_session_path, :method => :delete %></li> -->
+            <% else %>
+              <li><%= link_to "Log In", new_user_session_path %></li>
+            <% end %>
       </ul>
     </div>
+    <% if user_signed_in? %>
+      <p><%= link_to "New Article", new_article_path, class: "navbar-text", style: "btn-success"%></p>
+    <% end %>
 </nav>

@@ -27,6 +27,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
+# Devise for User Authentication
+gem 'devise', '~> 4.2'
+
 # Markdown Added
 gem 'redcarpet'
 gem 'rails_12factor', group: 'production'
