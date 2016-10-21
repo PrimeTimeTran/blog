@@ -5,6 +5,7 @@
 @import "bootstrap-sprockets";
 @import "bday"; //custom for bday.css
 @import "custom"; //custom for custom.css
+@import "cssplayground";
 
 /* General styles */
 html, body {
@@ -205,28 +206,3 @@ $table-header-border: 1px solid #FFF;
   $header-border: $table-header-border);
 
 // General styles
-
-body {
-  font-family: Arial, sans-serif;
-  color: #024457;
-  background: #f2f2f2;
-}
-
-h1 {
-  font-family: Verdana;
-  font-weight: normal;
-  color: #024457;
-  span {color: #167F92;}
-}
-
-#articles h1 {
-  color: red;
-}
-
-#faq {
-  color:blue;
-}
-
-.alert {
-  color:pink;
-}

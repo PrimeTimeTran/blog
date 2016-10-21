@@ -1,6 +1,7 @@
 <section id="articles">
   <div class="well">
     <h1><%= article.title %></h1>
+    <p>Posted By: <%= article.user.email %> <%= time_ago_in_words(article.created_at) %> ago</p>
       <p class="card-text"><%= @markdown.render(article.body).html_safe %></p><br>
       <div class="row" style="float: right">
       </div>

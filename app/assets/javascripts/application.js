@@ -31,7 +31,7 @@ $(document).on("page:load ready", function() {
         $("#bg").css("background-color", "#8F8F8F");
         $(this).hide();
       });
-  });
+ra
 
   $(document).on("page:load ready",function(){
       // Activate Carousel for use

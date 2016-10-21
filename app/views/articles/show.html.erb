@@ -2,20 +2,24 @@
   <container><br><br><br>
     <div class="container" id="main">
       <p id="notice"><%= notice %>
-        <h2>Title:</h2>
-          <%= @article.title %>
+        <h2><u><b>Title:</b></u></h2>
+          <h3 style="color: red"><%= @article.title %></h3>
           <p>Posted By: <%= @article.user.email %> <%= time_ago_in_words(@article.created_at) %> ago</p>
       </p>
 
       <body>
-          <h2>Body:</h2>
+          <h3><u><b>Body:</b></u></h3>
             <%= @article.body %>
       </body><br><br>
-      <h3>Comments: </h3>
+      <h4><b>Comments:</b></h4>
       <%= render @article.comments %>
 
-      <h3>Reply to Article:</h3>
-      <%= render 'comments/form' %>
+      <% if user_signed_in? %>
+        <h2>Reply to Article:</h2>
+          <%= render 'comments/form' %>
+      <% else %>
+        <h3 style="color:blue">You must sign in to comment</h3><br>
+      <% end %>
 
       <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-success' %>
       <%= link_to 'Back', articles_path, class: 'btn btn-warning' %>
