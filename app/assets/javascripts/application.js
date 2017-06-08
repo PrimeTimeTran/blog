@@ -10,9 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+//= require jquery3
 //= require jquery_ujs
-
+//= require popper
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
@@ -30,32 +30,5 @@ $(document).on("page:load ready", function() {
       $("#change").on("click", function() {
         $("#bg").css("background-color", "#8F8F8F");
         $(this).hide();
-      });
-ra
-
-  $(document).on("page:load ready",function(){
-      // Activate Carousel for use
-      $("#myCarousel").carousel();
-
-      // Enable Carousel Indicators in the middle
-      $(".item1").click(function(){
-          $("#myCarousel").carousel(0);
-      });
-      $(".item2").click(function(){
-          $("#myCarousel").carousel(1);
-      });
-      $(".item3").click(function(){
-          $("#myCarousel").carousel(2);
-      });
-      $(".item4").click(function(){
-          $("#myCarousel").carousel(3);
-      });
-
-      // Enable Carousel Controls for left and right
-      $(".left").click(function(){
-          $("#myCarousel").carousel("prev");
-      });
-      $(".right").click(function(){
-          $("#myCarousel").carousel("next");
       });
   });

@@ -1,55 +1,52 @@
 <!-- Main Content of the index Page -->
-<p id="notice">
-<%= notice %>
-</p>
-    <div class="container" style="background-color: #593E1A" id="bg">
-      <br>
-      <div class="jumbotron">
-        <h1>A Blog App for</h1><a href="http://www.CoderSchool.vn">CoderSchool</a>
-      </div>
-      <!-- Trigger the modal with a button -->
-      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Click me!</button>
-        <button id="target" class="btn btn-danger">Hide Articles</button> <button id="change" class="btn btn-primary">Make it Grey!</button>
+<p id="notice"><%= notice %></p>
+  <div class="container" style="background-color: #593E1A" id="bg"><br />
+    <div class="jumbotron">
+      <h1>A Blog App for</h1><a href="http://www.CoderSchool.vn">CoderSchool</a>
+    </div>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Click me!</button>
+      <button id="target" class="btn btn-danger">Hide Articles</button> <button id="change" class="btn btn-primary">Make it Grey!</button>
 
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
+      <!-- Modal -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title"><center>A message from Loi</center></h4>
-              </div>
-              <div class="modal-body">
-                <p>Thanks for checking out my Blog App =).</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title"><center>A message from Loi</center></h4>
             </div>
-
+            <div class="modal-body">
+              <p>Thanks for checking out my Blog App =).</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
-        </div><br><br>
 
-      <div id="main">
+        </div>
+      </div><br><br>
+
+    <div id="main">
+      <%= form_tag articles_path, :method => 'get' do %>
+      <%= text_field_tag :title_search, params[:title_search], class: "form-control", placeholder: "Search Title" %><br>
+      <div>
+        <%= submit_tag "Search Title", :name => nil, class: "btn btn-success" %><br>
+        <% end %>
+        <br>
         <%= form_tag articles_path, :method => 'get' do %>
-        <%= text_field_tag :title_search, params[:title_search], class: "form-control", placeholder: "Search Title" %><br>
+        <%= text_field_tag :body_search, params[:body_search], class: "form-control", placeholder: "Search Body" %><br>
         <div>
-          <%= submit_tag "Search Title", :name => nil, class: "btn btn-success" %><br>
-          <% end %>
-          <br>
-          <%= form_tag articles_path, :method => 'get' do %>
-          <%= text_field_tag :body_search, params[:body_search], class: "form-control", placeholder: "Search Body" %><br>
-          <div>
-            <%= submit_tag "Search Body", :name => nil, class: "btn btn-success" %>
-          <% end %>
+          <%= submit_tag "Search Body", :name => nil, class: "btn btn-success" %>
+        <% end %>
+      </div>
+        <br>
+        <div class="container">
+          <div class="row">
+            <%= render partial: 'article', collection: @articles %>
+          </div>
         </div>
-          <br>
-
-        <section>
-          <%= render @articles %>
-        </section>
-
-        </div>
+      </div>
   </div>

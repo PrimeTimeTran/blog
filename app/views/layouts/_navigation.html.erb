@@ -1,23 +1,30 @@
-<nav class="navbar navbar-default navbar-static-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <%= link_to "CoderSchoolBlog", root_path, class: "navbar-brand" %>
-      </div>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <%= link_to "Blog", root_path, class: "navbar-brand" %>
 
-      <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "About", welcome_index_path %></li>
-          <li><%= link_to "FAQ", welcome_faq_path %></li>
-          <li><%= link_to "CSS", welcome_cssplayground_path %></li>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <% if user_signed_in? %>
+          <li><%= link_to 'New Article', new_article_path %></li>
+        <% end %>
+      </li>
+        <li><%= link_to "About", welcome_index_path, class: "nav-item" %></li>
+        <li><%= link_to "FAQ", welcome_faq_path, class: "nav-item" %></li>
+        <li><%= link_to "CSS", welcome_cssplayground_path, class: "nav-item" %></li>
+      <% if user_signed_in? %>
+        <li><%= link_to "Logout", destroy_user_session_path, :method => :get %></li>
+      <% else %>
+        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+        <li><%= link_to "Log In", new_user_session_path %></li>
+      <% end %>
+    </ul>
 
-          <li><%= link_to "Sign Up", new_user_registration_path %></li>
-            <% if user_signed_in? %>
-              <li><%= link_to "Logout", destroy_user_session_path, :method => :get %></li>
-            <% else %>
-              <li><%= link_to "Log In", new_user_session_path %></li>
-            <% end %>
-            <% if user_signed_in? %>
-                        <%= link_to 'New Article', new_article_path, class: "btn btn-default navbar-btn" %>
-            <% end %>
-      </ul>
-    </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
 </nav>
